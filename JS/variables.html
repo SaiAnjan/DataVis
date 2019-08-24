@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Variables</title>
+	</head>
+	<body>
+
+	<script>
+	// This is a comment, comments are used to explain the code and are not interpreted
+
+
+
+	// var is used to declare a new variables
+
+	// integer variable
+	var integer = 10;
+
+	// console.log() is used to print a variable to browser console
+	// console.log(integer);
+
+	// float variable
+	var float = 10.0001;
+
+	// string variable
+	var string = "Data Visualization";
+
+	// boolean variables
+	var bool1 = true;
+	var boo2 = false;
+
+
+
+
+
+
+	// JavaScript Object Notation (JSON) variable
+	var json = {
+		// key: value
+		"x": 100,
+		"y": 200,
+	};
+
+	console.log(json);
+	// to access the values of JSON
+	console.log(json["x"]);
+	console.log(json["y"]);
+
+
+
+
+
+
+
+	// Arrays stores a list of any variable
+	// var array = [1, 2, 3.906, 4, 5];
+	var students = ["Anjan","Visualization","datalist"];
+	// console.log(students);
+
+	function studentslng(x){
+		var result = [];
+		for(var i in x){
+			result.push(x[i].length);
+		}
+		return result;
+	}
+
+	console.log(studentslng(students));
+	// to access the values of array
+	// console.log(array[0]); // the first element starts at 0 not 1
+	// console.log(array[1]);
+
+	// An array can also store mixed variables
+	// var array = [1, "asdf", 100];
+
+	// To get the length of array use array.length
+	// console.log(array.length);
+	// length is an attribute of the array object
+
+	// to add new element to the array, use .push function
+	// array.push(200);
+	// console.log(array);
+	</script>
+	</body>
+</html>
